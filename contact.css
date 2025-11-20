@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #fff;
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.contact-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  border-radius: 25px;
+  width: 400px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  text-align: center;
+}
+.contact-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.contact-container p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #dcdcdc;
+}
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #e0e0e0;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 0 10px #fff;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff416c, 0 0 30px #ff4b2b;
+}
